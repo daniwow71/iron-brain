@@ -55,6 +55,18 @@ Banda 3 (curso 2025/2026) — Depósito objetivo: mediados de junio de 2026. Def
 - Seguimiento con director: pendiente de agendar primer contacto formal del proyecto.
 - Test de Privacidad UZ: pendiente de confirmar si aplica.
 
+#### Preguntas pendientes para el director / Secretaría EUPT
+
+| ID | Pregunta | Dirigida a |
+|----|----------|------------|
+| E1 | ¿Existe plantilla específica de la EUPT para la memoria, o se usa el modelo genérico UZ disponible en biblioteca? | Director |
+| E2 | ¿Estilo de citas preferido? Propuesta: IEEE numérico (es el estándar en ingeniería y la normativa EUPT exige referencias numeradas). | Director |
+| E3 | ¿Declaración responsable sobre uso de IA: hay modelo propio de la EUPT o se usa el genérico de la UZ? | Secretaría EUPT |
+| E4 | ¿Dado que el proyecto trata datos personales de clientes (res.partner con nombre, email, teléfono, NIF, NIF cónyuge, dirección), se requiere realizar el Test de Privacidad de la UZ? | Secretaría EUPT / Director |
+| E5 | ¿Existe rúbrica de evaluación publicada (como en Facultad de Veterinaria UZ), o la evaluación sigue únicamente los criterios generales de la normativa EUPT? | Director |
+| E6 | ¿Preferencia sobre la tipografía y formato del documento? La normativa EUPT no lo especifica. Propuesta por defecto: A4, Times New Roman 12pt, interlineado 1,5, márgenes 2,5cm (3cm izquierdo), numeración de figuras por capítulo. | Director |
+| E7 | ¿Hay preferencia de herramienta para la memoria (Word con plantilla, LaTeX, Markdown convertido a PDF)? La UZ ofrece modelos en Word y LaTeX. Nuestra propuesta es Markdown con conversión a PDF vía Pandoc. | Director |
+
 ## Alcance del TFG
 
 **Dentro**: Fase 1 (infraestructura, sync con Odoo, auth, RLS, observabilidad mínima) + Módulo 1 (Motor de Inteligencia Comercial).

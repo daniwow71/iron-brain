@@ -62,3 +62,6 @@ Thumbs.db
 # Temp files
 *.tmp
 *.bak
+# Memoria build output
+memoria/build/
+
