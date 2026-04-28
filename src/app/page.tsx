@@ -111,13 +111,14 @@ function Footer() {
       <div className="mx-auto flex w-full max-w-5xl flex-col items-start gap-8 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-4">
           <Image
-            src="/brand/logo-todocesped-verde.png"
-            alt="Logotipo de TodoCESPED"
-            width={140}
-            height={32}
-            priority={false}
-            className="h-8 w-auto"
-          />
+              src="/brand/logo-todocesped-verde.png"
+              alt="Logotipo de TodoCESPED"
+              width={140}
+              height={32}
+              priority={false}
+              className="h-8 w-auto"
+              style={{ width: "auto", height: "auto" }}
+            />
         </div>
 
         <div className="text-sm leading-relaxed text-[var(--color-text-muted)]">
