@@ -11,7 +11,7 @@
 
 import type { OdooCallParams, OdooCredentials } from "./types";
 import { assertAllowedOdooMethod } from "./allowlist";
-import { jsonRpcCall, OdooRemoteError } from "./transport";
+import { jsonRpcCall} from "./transport";
 
 /**
  * Error lanzado cuando se intenta invocar un método del ORM de Odoo sin

@@ -1,26 +1,70 @@
 @import "tailwindcss";
 
+/**
+ * Variables de diseño de Iron Brain.
+ *
+ * La paleta sigue el manual de marca de TodoCESPED. Iron Brain hereda la
+ * identidad corporativa principal y añade variantes específicas para
+ * superficies oscuras, donde se aloja la mayor parte de la interfaz.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Paleta corporativa oficial TodoCESPED */
+  --color-brand-green: #98c11d;
+  --color-brand-orange: #f7a801;
+  --color-brand-blue: #0c4596;
+  --color-brand-grey: #f2f2f2;
+  --color-brand-black: #000000;
+
+  /* Tonos derivados para superficies oscuras de Iron Brain */
+  --color-surface-base: #0a0a0a;
+  --color-surface-elevated: #141414;
+  --color-surface-overlay: #1f1f1f;
+  --color-border-subtle: #27272a;
+
+  /* Tipografía */
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
+
+  /* Acento principal: verde TodoCESPED para enlaces y elementos destacados */
+  --color-accent: var(--color-brand-green);
+  --color-accent-hover: #87ad19;
+
+  /* Tokens de aplicación */
+  --background: var(--color-surface-base);
+  --foreground: var(--color-text-primary);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand-green: var(--color-brand-green);
+  --color-brand-orange: var(--color-brand-orange);
+  --color-brand-blue: var(--color-brand-blue);
+  --color-surface-elevated: var(--color-surface-elevated);
+  --color-surface-overlay: var(--color-surface-overlay);
+  --color-border-subtle: var(--color-border-subtle);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --font-sans: var(--font-ubuntu);
+  --font-mono: var(--font-ubuntu-mono);
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selección de texto con el verde corporativo */
+::selection {
+  background: var(--color-accent);
+  color: var(--color-brand-black);
 }
